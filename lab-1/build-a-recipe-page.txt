@@ -1,0 +1,37 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Recipe Page</title>
+  </head>
+<body>
+  <h1>Making Tea</h1>
+  <p>To make chai, boil water with tea, ginger, and spices. Then add milk and sugar, let it simmer for a few minutes, and strain it into your cup.
+  </br>Your delicious, warm chai is ready to drink!
+  </p>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>Water</li>
+    <li>Milk</li>
+    <li>Sugar</li>
+    <li>Tea</li>
+  </ul>
+  <h2>Instructions</h2>
+  <ol>
+    <li>2 cups of water</li>
+    <li>2 cups of milk (any kind you like)</li>
+    <li>4 teaspoons of loose black tea leaves (or 4 tea bags)
+
+</li>
+    <li>4 teaspoons of sugar (add more or less as you like)
+
+</li>
+  </ol>
+  <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="Describing Image">
+</body>
+</html>
+
+** end of index.html **
+

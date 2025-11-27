@@ -1,0 +1,33 @@
+** start of index.html **
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Agency Page</title>
+  <meta name="description" content="A concise, relevant summary of the page's content for search engines and users." />
+</head>
+<body>
+  <h1>Peshawer</h1>
+  <p>It is a Travel Agency Company That Will Help For You To Explore The Pakistan</p>
+  <h2>Packages</h2>
+  <p>Introduce Briefly the various pakages</p>
+  <ul>
+    <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+    <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+  </ul>
+  <h2>Top Itineraries</h2>
+  <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src= "image.png" alt="peshawer"></a>
+    <figcaption>Kpk</figcaption>
+  </figure>
+  <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src= "image.png" alt="Lahore"></a>
+    <figcaption>Punjab</figcaption>
+  </figure>
+  <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src= "image.png" alt="Karachi"></a>
+    <figcaption>Sindh</figcaption>
+  </figure>
+</body>
+</html>
+
+** end of index.html **
+

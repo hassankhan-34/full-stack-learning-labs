@@ -7,7 +7,7 @@
 - Basic Web Technologies - Clean, accessible web design</br>
 </br>
 <h2>📅 Project Info</h2></br>
-- Date Created: October 26, 2023</br>
+- Date Created: November 26, 2025</br>
 - Project Type: Web Development Lab</br>
 - Status: Completed</br>
 </br>

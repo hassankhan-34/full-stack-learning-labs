@@ -1,0 +1,75 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey About The Social Media</h1>
+  <p id="description">Please tell us about your social media habits. This includes platforms for staying in touch, like
+    Facebook and WhatsApp; apps for visual content like Instagram, TikTok, and YouTube; sites for quick news and
+    conversation like X (Twitter); professional networks like LinkedIn; and communities for hobbies and interests like
+    Pinterest and Reddit. Your input is valuable</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name (Required): </label>
+    <input required id="name" name="name" type="text" placeholder="Enter Your Name"/>
+    
+    <label id="email-label" for="email">Email (Required): </label>
+    <input required id="email" name="email" type="email" placeholder="Enter Your Email"/>
+    
+    <label id="number-label" for="number">Age: </label>
+    <input required id="number" name="number" type="number" min="3" max="50" placeholder="Age" />
+    
+    <label for="gender">Gender:</label>
+    <select id="dropdown" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+      <option value="prefer-not-to-say">Prefer not to say</option>
+    </select>
+    
+    <p>Which social media platforms do you use regularly?</p>
+    <input type="checkbox" id="tiktok" name="platforms" value="tiktok"/>
+    <label for="tiktok">TikTok</label>
+    
+    <input type="checkbox" id="whatsapp" name="platforms" value="whatsapp"/>
+    <label for="whatsapp">WhatsApp</label>   
+    
+    <input type="checkbox" id="instagram" name="platforms" value="instagram"/>
+    <label for="instagram">Instagram</label>   
+    
+    <input type="checkbox" id="facebook" name="platforms" value="facebook"/>
+    <label for="facebook">Facebook</label>
+    
+    <input type="checkbox" id="twitter" name="platforms" value="twitter"/>
+    <label for="twitter">Twitter</label>
+    
+    <input type="checkbox" id="youtube" name="platforms" value="youtube"/>
+    <label for="youtube">YouTube</label>
+    
+    <p>How much time do you spend on social media daily?</p>
+    <input type="radio" id="time-1" name="time-spent" value="less-than-1"/>
+    <label for="time-1">Less than 1 hour</label>
+    
+    <input type="radio" id="time-2" name="time-spent" value="1-2"/>
+    <label for="time-2">1-2 hours</label>
+    
+    <input type="radio" id="time-3" name="time-spent" value="3-4"/>
+    <label for="time-3">3-4 hours</label>
+    
+    <input type="radio" id="time-4" name="time-spent" value="more-than-4"/>
+    <label for="time-4">More than 4 hours</label>
+
+    <textarea name="suggestions" placeholder="Write Your Suggestion here"></textarea>
+    <input type="submit" id="submit"/>
+  </form>
+</body>
+
+</html>
+
+** end of index.html **
+

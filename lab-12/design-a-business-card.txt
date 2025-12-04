@@ -1,0 +1,67 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="business-card">
+        <img class="profile-image" src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg" alt="Profile photo" >
+        <p class="full-name">Hassan Khan</p>
+        <p class="designation">
+            Intern Web Developer
+        </p>
+        <p class="company">Elite Technology</p>
+        <hr>
+        <p>Email Address: hk9767208@gmail.com</p>
+        <p>Phone: 03124655917</p>
+        <a class="portfolio-link" href="http://example.com">Portfolio</a>
+        <hr>
+        <div class="social-media">
+            <h2>Connect with me</h2>
+            <a href="http://example.com">Twitter</a>
+            <a href="http://example.com">LinkedIn</a>
+            <a href="http://example.com
+            ">GitHub</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+}
+p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a{
+text-decoration: none}
+.business-card {
+  background-color: lightblue;
+  padding: 20px;
+  width: 300px;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-image{
+  max-width: 100%;
+}
+
+
+** end of styles.css **
+

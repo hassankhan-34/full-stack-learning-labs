@@ -1,0 +1,230 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- One unordered list with class todo-list -->
+    <ul class="todo-list">
+        <!-- Four list items inside the unordered list -->
+        <li class="todo-item">
+            <!-- Input with unique id and corresponding label -->
+            <input type="checkbox" id="task1" />
+            <label for="task1">Complete HTML structure</label>
+            
+            <!-- Sub-item unordered list -->
+            <ul class="sub-item">
+                <!-- List item with anchor element -->
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" 
+                       class="sub-item-link" 
+                       target="_blank">
+                        MDN HTML Documentation
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="todo-item">
+            <input type="checkbox" id="task2" />
+            <label for="task2">Style the to-do list</label>
+            
+            <ul class="sub-item">
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" 
+                       class="sub-item-link" 
+                       target="_blank">
+                        MDN CSS Documentation
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="todo-item">
+            <input type="checkbox" id="task3" />
+            <label for="task3">Add interactivity</label>
+            
+            <ul class="sub-item">
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" 
+                       class="sub-item-link" 
+                       target="_blank">
+                        MDN JavaScript Documentation
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li class="todo-item">
+            <input type="checkbox" id="task4" />
+            <label for="task4">Test the application</label>
+            
+            <ul class="sub-item">
+                <li>
+                    <a href="https://validator.w3.org/" 
+                       class="sub-item-link" 
+                       target="_blank">
+                        HTML Validator
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main todo list */
+ul.todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* List items inside the main todo list */
+ul.todo-list > li.todo-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    position: relative;
+}
+
+ul.todo-list > li.todo-item:last-child {
+    border-bottom: none;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 12px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* Label styling */
+label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Sub-item unordered list */
+ul.sub-item {
+    list-style-type: none;
+    padding-left: 40px;
+    margin-top: 15px;
+}
+
+ul.sub-item li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* Link styling - ALL REQUIREMENTS ARE MET HERE */
+a.sub-item-link {
+    /* No underline by default */
+    text-decoration: none;
+    
+    /* Default text color */
+    color: #2c8cff;
+    
+    font-size: 16px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+/* Hover state - changes color when hovered over */
+a.sub-item-link:hover {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.05);
+}
+
+/* Active state - changes color when clicked */
+a.sub-item-link:active {
+    color: #ff4757;
+    background-color: rgba(255, 71, 87, 0.1);
+}
+
+/* Focus state - colored outline when focused */
+a.sub-item-link:focus {
+    outline: 2px solid #ffa502;
+    outline-offset: 3px;
+}
+
+/* Visited state - changes color once visited */
+a.sub-item-link:visited {
+    color: #9c88ff;
+}
+
+/* Add some visual feedback for completed tasks */
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Make the todo items more visually distinct on hover */
+ul.todo-list > li.todo-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    ul.todo-list > li.todo-item {
+        padding: 15px;
+    }
+    
+    ul.sub-item {
+        padding-left: 20px;
+    }
+    
+    label {
+        font-size: 16px;
+    }
+    
+    a.sub-item-link {
+        font-size: 15px;
+    }
+}
+
+** end of styles.css **
+
